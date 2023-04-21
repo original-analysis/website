@@ -45,6 +45,7 @@
 
 <body>
     <img src="https://original-analysis.com/original-analysis.jpg">
+    <p id="color">original-analysis.com</p>
     <script>
         function randomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
@@ -112,7 +113,7 @@
                 document.documentElement.style.setProperty('--color', 'hsl(' + h + ', ' + s + '%, ' + l + '%)');
                 var hex = hslToHex(h, s, l);
                 document.title = "original-analysis.com";
-                colorElement.innerHTML = hex;
+                //colorElement.innerHTML = hex;
                 document.documentElement.style.setProperty('--color-transparent', hex + '22');
 
                 setFavicon(hex);
